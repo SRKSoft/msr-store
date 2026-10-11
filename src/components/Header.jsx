@@ -52,16 +52,16 @@ export default function Header() {
           {location.pathname !== '/' && (
             <button className="icon-button header-back" onClick={() => navigate(-1)} aria-label="Go back"><Icon name="back" size={19} /></button>
           )}
-          <Link to="/" className="brand" aria-label="MSR Store home">
-            <span className="brand__mark"><img src="/icons/icon-192.png" alt="" /></span>
-            <span className="brand__copy"><strong>MSR</strong><span>Store</span></span>
+          <Link to="/" className="brand" aria-label="SRK Soft Store home">
+            <span className="brand__mark"><img src="/icons/web-app-manifest-512x512.png" alt="SRK Soft Logo" /></span>
+            <span className="brand__copy"><strong>SRK Soft</strong><span>Store</span></span>
           </Link>
         </div>
 
         <div className={`search-box ${showSuggestions ? 'is-open' : ''}`} ref={searchRef}>
           <form onSubmit={submit} role="search">
             <span className="search-box__icon"><Icon name="search" size={19} /></span>
-            <input value={query} onChange={e => { setQuery(e.target.value); setShowSuggestions(true) }} onFocus={() => setShowSuggestions(true)} placeholder="Search apps, games & tools" aria-label="Search apps, games and tools" />
+            <input value={query} onChange={e => { setQuery(e.target.value); setShowSuggestions(true) }} onFocus={() => setShowSuggestions(true)} placeholder="Search store apps..." aria-label="Search store apps" />
             {query && <button type="button" className="search-box__clear" onClick={() => { setQuery(''); setShowSuggestions(false) }} aria-label="Clear search"><Icon name="close" size={16} /></button>}
           </form>
           {showSuggestions && suggestions.length > 0 && (
@@ -87,7 +87,7 @@ export default function Header() {
 
         {menuOpen && (
           <div className="quick-menu">
-            <div className="quick-menu__top"><span>MSR Store</span><button className="icon-button" onClick={() => setMenuOpen(false)} aria-label="Close menu"><Icon name="close" size={17} /></button></div>
+            <div className="quick-menu__top"><span></span>𝐒𝐑𝐊 𝐒𝐨𝐟𝐭 𝐒𝐭𝐨𝐫𝐞<button className="icon-button" onClick={() => setMenuOpen(false)} aria-label="Close menu"><Icon name="close" size={17} /></button></div>
             <Link to="/" className="quick-menu__item"><span>Store</span><small>Browse all apps</small></Link>
             <Link to="/about" className="quick-menu__item"><span>Developer</span><small>About the creator</small></Link>
             <div className="quick-menu__theme"><span>Appearance</span><ThemeToggle /></div>

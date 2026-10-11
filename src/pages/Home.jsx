@@ -37,9 +37,9 @@ export default function Home() {
         <div className="hero-orb hero-orb--one" /><div className="hero-orb hero-orb--two" />
         <div className="container home-hero__grid">
           <div className="hero-copy">
-            <div className="hero-kicker"><span className="hero-kicker__dot" /> Independent software · Curated by MSR</div>
+            <div className="hero-kicker"><span className="hero-kicker__dot" />  𝐒𝐑𝐊 𝐒𝐨𝐟𝐭 𝐒𝐭𝐨𝐫𝐞</div>
             <h1>Software that feels <em>simple.</em></h1>
-            <p>Discover focused desktop apps and games built with care. Browse the catalog, see what each app does, and install through its official release link.</p>
+            <p>𝑫𝒊𝒔𝒄𝒐𝒗𝒆𝒓 𝒔𝒆𝒄𝒖𝒓𝒆, 𝒄𝒖𝒓𝒂𝒕𝒆𝒅 𝒅𝒆𝒔𝒌𝒕𝒐𝒑 𝒂𝒑𝒑𝒔 𝒂𝒏𝒅 𝒕𝒐𝒐𝒍𝒔 𝒃𝒖𝒊𝒍𝒕 𝒇𝒐𝒓 𝒑𝒆𝒓𝒇𝒐𝒓𝒎𝒂𝒏𝒄𝒆. 𝑩𝒓𝒐𝒘𝒔𝒆 𝒐𝒖𝒓 𝒗𝒆𝒓𝒊𝒇𝒊𝒆𝒅 𝒔𝒐𝒇𝒕𝒘𝒂𝒓𝒆 𝒄𝒂𝒕𝒂𝒍𝒐𝒈 𝒂𝒏𝒅 𝒊𝒏𝒔𝒕𝒂𝒍𝒍 𝒔𝒂𝒇𝒆𝒍𝒚 𝒕𝒉𝒓𝒐𝒖𝒈𝒉 𝒐𝒇𝒇𝒊𝒄𝒊𝒂𝒍 𝒅𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝒓𝒆𝒍𝒆𝒂𝒔𝒆 𝒍𝒊𝒏𝒌𝒔.</p>
             <div className="hero-actions">
               <a href="#catalog" className="button button--primary">Explore apps <Icon name="arrow" size={17} /></a>
               <Link to="/about" className="button button--soft">Meet the developer</Link>
