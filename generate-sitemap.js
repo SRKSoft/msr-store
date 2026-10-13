@@ -9,7 +9,7 @@ import { dirname, resolve } from 'path'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 // Change this if you ever move to a custom domain.
-const SITE_URL = 'https://msr-store-olive.vercel.app'
+const SITE_URL = 'https://apps.srksoft.online/'
 
 const apps = JSON.parse(
   readFileSync(resolve(__dirname, 'src/data/apps.json'), 'utf-8')
